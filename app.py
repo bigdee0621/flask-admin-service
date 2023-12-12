@@ -10,7 +10,7 @@ from controller.activityController import Controller as activity
 
 
 from utils.dumps import response
-from utils.uploadPic import uploadImg
+#from utils.uploadPic import uploadImg
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -58,11 +58,11 @@ def adminCreate():
 def adminChangePwd():
     return admin.changePwd(request)
 
-#图片上传
-@app.route('/api/upload/picture',methods=["GET"])
-def uploadPic():
-    data=uploadImg()
-    return response(data, code=20000, message='获取成功！')
+# #图片上传
+# @app.route('/api/upload/picture',methods=["GET"])
+# def uploadPic():
+#     data=uploadImg()
+#     return response(data, code=20000, message='获取成功！')
 
 #分类
 @app.route('/api/category/create',methods=["POST"])

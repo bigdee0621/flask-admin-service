@@ -2,8 +2,8 @@
  基于flask的运用于vue-element-admin后端，使用jwt作为token鉴权。
 ### 运行
 ``` bash
-pip install
-run app.py
+pip install -r requirements.txt
+python app.py
 ```
 
 ### 目录
